@@ -8,22 +8,14 @@
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
 
-    <!-- Google Web Fonts -->
+    <link href="img/favicon.ico" rel="icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
-
-    <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
 <style>
@@ -32,14 +24,14 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        min-height: 500px; /* Asegúrate de que tenga altura */
+        min-height: 500px; 
     }
     .background-container2 {
         background-image: url('img/fondo5.png');
         background-size: cover;
         background-position: center; 
         background-repeat: no-repeat;
-        min-height: 500px; /* Asegúrate de que tenga altura */
+        min-height: 500px; 
     }
 </style>
 <body>
@@ -162,7 +154,6 @@
     </div>
     
     <div class="container-fluid py-1"></div>
-    
         <div class="container py-5">
             <div class="row">
                 <div class="col-lg-5" style="min-height: 500px;">
@@ -193,10 +184,8 @@
                                 </div>
                                 <div class="p-4">
                                     <p>Ser el referente en soluciones integrales para seguridad, formación y consultoría en Bolivia e internacionalmente</p>
-                                  
                                 </div>
                             </div>
-                            
                         </div>
                     </div>
                 </div>
@@ -204,7 +193,6 @@
         </div>
     </div>
 
-    <!-- Team Start -->
     <!-- <div class="container-fluid py-1">
         <div class="container pt-5">
             <div class="row justify-content-center text-center">
@@ -297,7 +285,7 @@
                         
                     </a>
                     <p>En Corporación Rojo, protegemos lo que más valoras, ofreciendo soluciones personalizadas en seguridad y desarrollo para garantizar el bienestar de tu empresa y asegurar tu futuro.</p>
-                    <p><i class="fa fa-map-marker-alt mr-2"></i>Calle 1, Obrajes, Edificio Torres Sur, Oficina TS17</p>
+                    <p><i class="fa fa-map-marker-alt mr-2"></i>Zona Obrajes, calle 1, Edificio Torres Sur, Oficina TS17</p>
                     <p><i class="fa fa-phone-alt mr-2"></i>+591 2780683</p>
                     <p><i class="fa fa-envelope mr-2"></i>www.redcorporation.org</p>
                     <div class="d-flex justify-content-start mt-4">
@@ -331,14 +319,16 @@
                         </div>
                         <div class="col-sm-12 mb-5">
                             <h5 class="text-white text-uppercase mb-4">SUSCRIBETE Y RECIBE NUESTRA CARTA DE PRESENTACION</h5>
-                            <div class="w-100">
-                                <div class="input-group">
-                                    <input type="text" class="form-control border-light" style="padding: 30px;" placeholder="Ingresa tu MiCorreo@gmail.com">
-                                    <div class="input-group-append">
-                                        <button class="btn bg-light px-4 text-white">Suscribirse</button>
+                            <form name="sentMessage3" id="contactForm3" novalidate="novalidate">
+                                <div class="w-100">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control border-light" style="padding: 30px;" placeholder="Ingresa tu Correo@gmail.com">
+                                        <div class="input-group-append">
+                                            <button class="btn bg-light px-4 text-white">Suscribirse</button>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -386,23 +376,17 @@
                                     <input type="email" class="form-control border-0 p-4" id="email" placeholder="Correo electrónico" required="required" data-validation-required-message="Ingresa tu correo">
                                     <p class="help-block text-danger"></p>
                                 </div>
-                                <!-- <div class="control-group">
-                                    <input type="text" class="form-control border-0 p-4" id="Pais" placeholder="Desde el Pais desde donde nos Escribes" required="required" data-validation-required-message="Ingresa el Pais">
-                                    <p class="help-block text-danger"></p>
-                                </div> -->
                                 <div class="control-group">
                                     <select class="col-sm-12 border-0 p-4 " id="servicio" required="required" data-validation-required-message="Selecciona un servicio" aria-placeholder="Selecciona un servicio" style="color: #292727;">
                                         <option value="" disabled selected>Selecciona el Servicio</option>
-                                        <option value="1">Seguridad Privada</option>
-                                        <option value="2">Investigación</option>
-                                        <option value="3">Consultoría</option>
-                                        <option value="4">Capacitaciones</option>
-                                        <option value="5">Plataforma Educativa</option>
+                                        <option value="Seguridad Privada">Seguridad Privada</option>
+                                        <option value="Investigación">Investigación</option>
+                                        <option value="Consultoría">Consultoría</option>
+                                        <option value="Capacitaciones">Capacitaciones</option>
+                                        <option value="Plataforma Educativa">Plataforma Educativa</option>
                                     </select>
                                     <p class="help-block text-danger"></p>
                                 </div>
-                                
-                                
                                 <div class="control-group">
                                     <textarea class="form-control border-0 py-3 px-4" rows="4" id="message" placeholder="Mensaje y/o Consulta" required="required" data-validation-required-message="Ingresa tu mensaje"></textarea>
                                     <p class="help-block text-danger"></p>
@@ -434,12 +418,10 @@
     <script src="mail/contact.js"></script>
     <script src="js/main.js"></script>
     <script>
-        // Mostrar el loader al iniciar la página
         document.addEventListener("DOMContentLoaded", function() {
-            // Muestra el loader y oculta después de 5 segundos
             setTimeout(function() {
                 document.body.classList.add('loaded');
-            }, 2000); // 5000 milisegundos = 5 segundos
+            }, 2000); 
         });
     </script>
     

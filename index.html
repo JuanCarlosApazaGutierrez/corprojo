@@ -22,14 +22,14 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        min-height: 500px; /* Asegúrate de que tenga altura */
+        min-height: 500px; 
     }
     .background-container2 {
         background-image: url('img/fondo5.png');
         background-size: cover;
         background-position: center; 
         background-repeat: no-repeat;
-        min-height: 500px; /* Asegúrate de que tenga altura */
+        min-height: 500px; 
     }
 </style>
 <body>
@@ -52,7 +52,6 @@
                     <a class="px-2" href="">
                         <i class="fab fa-facebook-f"></i>
                     </a>
-                   
                     <a class="px-2" href="">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
@@ -90,13 +89,11 @@
                     </a>
                     <a href="contacto.html" class="nav-item nav-link">
                         <i class="fas fa-envelope"></i> Contacto
-                    </a>
-                    
+                    </a> 
                 </div>
                 <a href="https://wa.link/d4gchj" class="btn btn-custom d-none d-lg-block" >
                     <i class="fas fa-comment-dots"></i> Consulta Gratuita
                 </a>
-
             </div>
         </nav>
     </div>
@@ -184,6 +181,16 @@
             </div>
         </div>
         <div class="owl-carousel service-carousel">
+            <div class="service-item position-relative">
+                <img class="img-fluid" src="img/service-10.png" alt="">
+                <div class="service-text text-center">
+                    <h4 class="text-white font-weight-medium px-3">Servicio de Rastreo Satelital Vehicular</h4>
+                    <p class="text-white px-3 mb-3">Imagina tener el control total desde tu celular o computadora, con alertas que te avisan si algo sale mal. </p>
+                    <div class="w-100 bg-white text-center p-4" >
+                        <a class="btn btn-custom" href="servicios.html#miDiv7">Ver Servicio</a>
+                    </div>
+                </div>
+            </div>
             <div class="service-item position-relative">
                 <img class="img-fluid" src="img/service-1.jpg" alt="">
                 <div class="service-text text-center">
@@ -373,7 +380,6 @@
                     </div>
                 </div>
             </div>
-            
         </div>
     </div>
     
@@ -382,11 +388,10 @@
             <div class="row">
                 <div class="col-lg-6 pr-lg-5 mb-5">
                     <a href="index.html" class="navbar-brand">
-                        <img src="img/logoblanco.png" width="250px">
-                        
+                        <img src="img/logoblanco.png" width="250px"> 
                     </a>
                     <p>En Corporación Rojo, protegemos lo que más valoras, ofreciendo soluciones personalizadas en seguridad y desarrollo para garantizar el bienestar de tu empresa y asegurar tu futuro.</p>
-                    <p><i class="fa fa-map-marker-alt mr-2"></i>Calle 1, Obrajes, Edificio Torres Sur, Oficina TS17</p>
+                    <p><i class="fa fa-map-marker-alt mr-2"></i>Zona Obrajes, calle 1, Edificio Torres Sur, Oficina TS17</p>
                     <p><i class="fa fa-phone-alt mr-2"></i>+591 2780683</p>
                     <p><i class="fa fa-envelope mr-2"></i>www.redcorporation.org</p>
                     <div class="d-flex justify-content-start mt-4">
@@ -420,14 +425,16 @@
                         </div>
                         <div class="col-sm-12 mb-5">
                             <h5 class="text-white text-uppercase mb-4">SUSCRIBETE Y RECIBE NUESTRA CARTA DE PRESENTACION</h5>
-                            <div class="w-100">
-                                <div class="input-group">
-                                    <input type="text" class="form-control border-light" style="padding: 30px;" placeholder="Ingresa tu MiCorreo@gmail.com">
-                                    <div class="input-group-append">
-                                        <button class="btn bg-light px-4 text-white">Suscribirse</button>
+                            <form name="sentMessage3" id="contactForm3" novalidate="novalidate">
+                                <div class="w-100">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control border-light" style="padding: 30px;" placeholder="Ingresa tu Correo@gmail.com">
+                                        <div class="input-group-append">
+                                            <button class="btn bg-light px-4 text-white">Suscribirse</button>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -475,23 +482,17 @@
                                     <input type="email" class="form-control border-0 p-4" id="email" placeholder="Correo electrónico" required="required" data-validation-required-message="Ingresa tu correo">
                                     <p class="help-block text-danger"></p>
                                 </div>
-                                <!-- <div class="control-group">
-                                    <input type="text" class="form-control border-0 p-4" id="Pais" placeholder="Desde el Pais desde donde nos Escribes" required="required" data-validation-required-message="Ingresa el Pais">
-                                    <p class="help-block text-danger"></p>
-                                </div> -->
                                 <div class="control-group">
                                     <select class="col-sm-12 border-0 p-4 " id="servicio" required="required" data-validation-required-message="Selecciona un servicio" aria-placeholder="Selecciona un servicio" style="color: #292727;">
                                         <option value="" disabled selected>Selecciona el Servicio</option>
-                                        <option value="1">Seguridad Privada</option>
-                                        <option value="2">Investigación</option>
-                                        <option value="3">Consultoría</option>
-                                        <option value="4">Capacitaciones</option>
-                                        <option value="5">Plataforma Educativa</option>
+                                        <option value="Seguridad Privada">Seguridad Privada</option>
+                                        <option value="Investigación">Investigación</option>
+                                        <option value="Consultoría">Consultoría</option>
+                                        <option value="Capacitaciones">Capacitaciones</option>
+                                        <option value="Plataforma Educativa">Plataforma Educativa</option>
                                     </select>
                                     <p class="help-block text-danger"></p>
                                 </div>
-                                
-                                
                                 <div class="control-group">
                                     <textarea class="form-control border-0 py-3 px-4" rows="4" id="message" placeholder="Mensaje y/o Consulta" required="required" data-validation-required-message="Ingresa tu mensaje"></textarea>
                                     <p class="help-block text-danger"></p>
@@ -523,12 +524,10 @@
     <script src="mail/contact.js"></script>
     <script src="js/main.js"></script>
     <script>
-        // Mostrar el loader al iniciar la página
         document.addEventListener("DOMContentLoaded", function() {
-            // Muestra el loader y oculta después de 5 segundos
             setTimeout(function() {
                 document.body.classList.add('loaded');
-            }, 2000); // 5000 milisegundos = 5 segundos
+            }, 2000); 
         });
     </script>
     
